@@ -1,6 +1,6 @@
 # Neelkanth Tandel
 **Frontend / Full-Stack Engineer**
-tandelneelkanth@gmail.com · +91 87809 29208 · Gujarat, India · neelkanth.me · github.com/NeelkanthTandel
+tandelneelkanth@gmail.com · +91 87809 29208 · Gujarat, India · neelkanthtandel.com · github.com/NeelkanthTandel
 
 Sole engineer behind Gullynest — a live Bengaluru rental marketplace on Next.js and Supabase, taken
 from a blank editor to paying users, with AI agents coding inside an architecture I owned. Four years

@@ -1,5 +1,5 @@
 # Neelkanth Tandel
-[email redacted in repo] | [phone redacted in repo] | Gujarat, India | neelkanth.me
+[email redacted in repo] | [phone redacted in repo] | Gujarat, India | neelkanthtandel.com
 
 ## TECHNICAL SKILLS & HIGHLIGHTS
 - **Languages:** JavaScript, TypeScript, Python, C/C++, PHP, HTML5, CSS3
