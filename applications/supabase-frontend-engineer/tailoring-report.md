@@ -22,18 +22,41 @@
   economics without the candidate putting a number on paper he'd have to defend.
 
 ## Known gaps — interview prep
-1. **No E2E tests, no CI merge gate.** The single weakest point against this JD, which names Playwright
-   and MSW and says "the CI is what keeps that speed safe." Nothing on the resume claims otherwise.
-   Highest-leverage fix before applying: Playwright over Gullynest's core flows (search → listing →
-   lead capture) plus a GitHub Actions workflow gating typecheck + tests on every PR.
-2. **MSW is absent entirely.** Worth an afternoon on Gullynest's API mocks if there's time.
-3. **Edge runtime** is claimed nowhere. If Gullynest uses Vercel Edge or Supabase Edge Functions, say so —
-   it completes R2.
-4. **Location line still reads "Gujarat, India"** as on the source resume, though Unwrap Labs and
-   Gullynest are both Bengaluru. Supabase is remote-global so it matters little, but pick one deliberately.
-5. **Public work.** github.com/NeelkanthTandel is now on the resume — make sure the profile shows
-   something real before submitting.
+*(Rewritten against the verbatim posting in `jd-verbatim.md`. The real JD is materially more
+demanding on quality than the reconstruction this resume was first built against.)*
+
+**1. The quality pipeline is the gap, and it is bigger than it looked.**
+The posting names seven layers: type safety at the boundaries, lint/format, unit and component
+tests, contract tests against APIs, accessibility, visual regression, and bundle-size budgets.
+The resume currently evidences two — strict TypeScript and Vitest/RTL. Ranked by leverage per hour
+on Gullynest before applying:
+   - **Playwright over the core flows** (search → listing → lead capture) + a **GitHub Actions gate**
+     on typecheck/lint/tests. Named tooling, and it converts R7 from partial to strong.
+   - **Bundle-size budget** — cheapest item on the list. `next build` already reports route sizes;
+     a CI threshold is an afternoon.
+   - **Accessibility** — `eslint-plugin-jsx-a11y` plus an axe pass in Playwright. Also cheap.
+   - **MSW** for API mocks; **visual regression** (Playwright snapshots) if time allows.
+
+**2. "A bug caught once is caught forever" is its own requirement, and nothing on the resume
+   speaks to it.** If any Gullynest or Neev bug fix came with a regression test, that is a bullet
+   worth writing — the JD asks specifically for adding the check *at the cheapest stage that can
+   catch it*. Needs confirmation before it goes on the page.
+
+**3. "Work in the open."** The JD wants public work in a codebase thousands read. The GitHub handle
+   is on the resume; the profile needs to show something real. Any OSS contribution, or making a
+   slice of Gullynest public, would answer this directly.
+
+**4. Edge runtime still unclaimed.** Listed explicitly under the modern-landscape requirement.
+   If Gullynest touches Vercel Edge or Supabase Edge Functions, say so — it completes R4.
+
+**5. Preview deploys and observability** are named under "work end-to-end". Vercel preview deploys
+   are likely already in use on Gullynest; error monitoring may not be. Both are claimable if true.
+
+**6. Location line reads "Gujarat, India"** as on the source resume, though Unwrap Labs and
+   Gullynest are Bengaluru. Fully remote role hired globally, so it is low-stakes — but pick one.
 
 ## Verification notes
-- jobs.ashbyhq.com and supabase.com are blocked by this session's egress proxy. The JD was reconstructed
-  from search snippets; requirements in `jd-analysis.md` should be checked against the live posting.
+- Requirement map rebuilt from the candidate-supplied verbatim posting on 2026-08-28.
+- Two errors in the earlier search-based reconstruction are corrected in `jd-analysis.md`: this role
+  has **no EU-timezone constraint** (fully remote, global), and docs/example-apps/community
+  engagement are **not** responsibilities of this req — they belong to the separate Docs posting.

@@ -1,40 +1,39 @@
-# Supabase — Frontend Engineer
+# Supabase — Frontend Engineer: requirement map
 
-Source: https://jobs.ashbyhq.com/supabase/f048dd68-63f8-4f98-9860-3d5a43c09a01
-(Direct fetch blocked by session egress proxy; reconstructed from search snippets — verify against live posting.)
-
-## Team / surface area
-- Team Frontend owns the marketing/docs website tooling and **Studio** — the core product
-  (a large Next.js app in TypeScript) used by millions of developers.
-- Fully remote, global, no offices. ESOP. Some Frontend reqs are EU-timezone-scoped.
-
-## What you'll do
-- Ship products 0→1, then earn the next version from users: blank editor → real users in
-  production → use support threads, usage data, direct conversations to decide what's next.
-- Own the **quality pipeline**, not just the feature. "In a world where an agent writes a large
-  share of the code, fast, the CI is what keeps that speed safe."
-- Also: build ecosystem tooling, write docs, build example apps, engage the community on GitHub.
+Verbatim posting: `jd-verbatim.md` (supplied by candidate; jobs.ashbyhq.com is egress-blocked here).
+This file supersedes the earlier reconstruction built from search snippets.
 
 ## Requirements
-| # | Requirement | Weight |
-|---|---|---|
-| R1 | TypeScript + React depth | Critical |
-| R2 | Modern frontend landscape: SSR, streaming, server components, edge | Critical |
-| R3 | Test/CI pipelines: Vitest, Playwright, MSW or equivalents | Critical |
-| R4 | Treats tests/types/CI as accelerators, not tax | Critical |
-| R5 | Comfort with AI coding agents: reviewing output, tightening architecture where they overreach, giving them guardrails to verify their own work | Critical (differentiator) |
-| R6 | Has launched something, watched real people use it, improved it on that feedback — not a handed-down spec | Critical (differentiator) |
-| R7 | Autonomy + async written communication; no one assigning tickets | Important |
-| R8 | Strong all-around web dev: APIs, Postgres, deployments | Important |
-| R9 | Next.js at scale | Important |
 
-## Candidate gap map (vs. current resume)
-- **Covered:** React/TS, Next.js, Postgres + SQL triggers, GraphQL/REST APIs, CI/CD (GH Actions),
-  0→1 (Tvisi co-founder, Neev app from scratch, EkAyana), analytics-driven iteration (Mixpanel,
-  UXCam, user-feedback bug triage), autonomy in early-stage startups.
-- **Gaps to close:** R2 (no SSR/RSC/streaming/edge vocabulary anywhere), R3 (Jest only — no
-  Vitest/Playwright/MSW), R4 (no bullet frames quality as a velocity lever), R5 (AI-agent
-  workflow completely absent — and this is the JD's loudest signal), R6 (Gullynest is the
-  strongest possible evidence and isn't on the resume at all).
-- **Positioning:** current title reads "Full-stack developer"; needs frontend-forward framing
-  without becoming untrue.
+| # | Requirement | Weight | Resume coverage |
+|---|---|---|---|
+| R1 | 0→1 track record, **"ideally something you can point us to"** | Critical | **Strong** — Gullynest, live URL on the resume, with listings/users/closures |
+| R2 | Iterated on real user feedback, not a handed-down spec | Critical | **Strong** — Gullynest bullet 4; Mixpanel/UXCam-driven prioritisation at Neev |
+| R3 | TypeScript + deep React | Critical | **Strong** |
+| R4 | Modern landscape: SSR, streaming, server components, **edge** | Critical | **Partial** — App Router/RSC/Server Actions/SSR-ISR claimed; **edge unclaimed** |
+| R5 | AI agents: review output, tighten architecture on overreach, give guardrails to self-verify | Critical | **Strong** — dedicated bullet, near-verbatim match |
+| R6 | Quality pipeline as layered checks: type safety at boundaries, lint/format, unit + component tests, **contract tests vs APIs**, **accessibility**, **visual regression**, **bundle-size budgets** | Critical | **Weak** — only strict TS + Vitest/RTL. Four of seven layers absent |
+| R7 | Tooling fluency: **Vitest, Playwright, MSW** or equivalents; opinions on where a check runs and what it's worth | Critical | **Partial** — Vitest/Jest/RTL yes; **no Playwright, no MSW** |
+| R8 | "A bug caught once is caught forever" — add the check that would have caught it, at the cheapest stage | Critical | **Unclaimed** — no bullet expresses regression-test discipline |
+| R9 | End-to-end: frontend UI, **API contracts**, **preview deploys**, **observability** | Important | **Partial** — full-stack + API work strong; preview deploys/observability unclaimed |
+| R10 | **Work in the open** — publicly, in a codebase thousands read and contribute to | Important | **Weak** — GitHub handle added, but no public/OSS work shown |
+| R11 | Autonomy + async written communication | Important | **Strong** — sole engineer, remote US role, co-founder |
+
+## What changed vs. my earlier reconstruction
+
+Got right: Studio/marketing-docs ownership, 0→1 + user-feedback bar, "CI is what keeps that speed
+safe", AI-agent comfort, TS/React + SSR/streaming/RSC/edge, Vitest/Playwright/MSW, autonomy/async.
+
+**Missed — all material:**
+1. The quality pipeline is spelled out as **seven layers**, not a general ask. Contract tests,
+   accessibility, visual regression, and bundle-size budgets were entirely absent from my map.
+2. The **"bug caught once is caught forever"** bullet — regression discipline as its own
+   requirement — did not exist in my reconstruction.
+3. **"Work end-to-end and in the open"** — preview deploys, observability, and public codebase work.
+4. **"Ideally something you can point us to"** — the 0→1 claim is expected to be linkable.
+   Gullynest satisfies this; worth knowing it's an explicit ask.
+
+**Wrongly included** (came from the separate Frontend-Docs posting or older reqs, not this one):
+- "Write docs, build example applications, engage the community on GitHub" as responsibilities.
+- An EU-timezone constraint. This role is **fully remote, hired globally** — no timezone restriction.
+- "Large Next.js app" as a stated descriptor of Studio (true in other postings, not stated here).
