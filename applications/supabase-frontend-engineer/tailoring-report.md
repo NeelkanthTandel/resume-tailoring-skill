@@ -37,22 +37,18 @@ on Gullynest before applying:
    - **Accessibility** — `eslint-plugin-jsx-a11y` plus an axe pass in Playwright. Also cheap.
    - **MSW** for API mocks; **visual regression** (Playwright snapshots) if time allows.
 
-**2. "A bug caught once is caught forever" is its own requirement, and nothing on the resume
-   speaks to it.** If any Gullynest or Neev bug fix came with a regression test, that is a bullet
-   worth writing — the JD asks specifically for adding the check *at the cheapest stage that can
-   catch it*. Needs confirmation before it goes on the page.
+**2. RESOLVED — regression discipline, edge, preview deploys, observability.** Confirmed with the
+   candidate on 2026-08-28 and now on the resume: Gullynest runs on **Supabase Edge Functions**
+   (completes the modern-landscape requirement), ships via **Vercel preview deploys** with
+   **production error monitoring**, and every bug that slipped through got a **regression test at
+   the cheapest stage that could catch it** — answering the "caught once, caught forever" bullet
+   in the JD's own terms.
 
 **3. "Work in the open."** The JD wants public work in a codebase thousands read. The GitHub handle
    is on the resume; the profile needs to show something real. Any OSS contribution, or making a
    slice of Gullynest public, would answer this directly.
 
-**4. Edge runtime still unclaimed.** Listed explicitly under the modern-landscape requirement.
-   If Gullynest touches Vercel Edge or Supabase Edge Functions, say so — it completes R4.
-
-**5. Preview deploys and observability** are named under "work end-to-end". Vercel preview deploys
-   are likely already in use on Gullynest; error monitoring may not be. Both are claimable if true.
-
-**6. Location line reads "Gujarat, India"** as on the source resume, though Unwrap Labs and
+**4. Location line reads "Gujarat, India"** as on the source resume, though Unwrap Labs and
    Gullynest are Bengaluru. Fully remote role hired globally, so it is low-stakes — but pick one.
 
 ## Verification notes

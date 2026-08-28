@@ -8,8 +8,8 @@ shipping TypeScript and React in early-stage startups.
 
 ## SKILLS
 - **Frontend:** TypeScript, React, Next.js (App Router, Server Components, Server Actions, SSR/ISR), React Native, HTML5/CSS3, Framer Motion, Figma
-- **Backend & Data:** PostgreSQL (triggers, RLS, atomic transactions), Supabase (Auth, RLS, Storage), Node.js, Express, Prisma, GraphQL, REST, WebSockets, JWT/OAuth
-- **Quality & Delivery:** strict TypeScript, Vitest, Jest, React Testing Library, GitHub Actions, Git, Vercel
+- **Backend & Data:** PostgreSQL (triggers, RLS, atomic transactions), Supabase (Auth, RLS, Storage, Edge Functions), Node.js, Express, Prisma, GraphQL, REST, WebSockets, JWT/OAuth
+- **Quality & Delivery:** strict TypeScript, Vitest, Jest, React Testing Library, regression testing, error monitoring, GitHub Actions, Vercel preview deploys, Git
 - **AI-assisted development:** architecture-first agent workflows, diff review, guardrail design · **Also:** Python, C/C++, PHP, MongoDB, Mixpanel, UXCam
 
 ## EXPERIENCE
@@ -18,9 +18,10 @@ shipping TypeScript and React in early-stage startups.
 **Full-Stack Engineer** · Oct 2025 – Present
 
 *Gullynest (gullynest.com) — tenant-to-tenant rental marketplace, built 0→1 as sole engineer*
-- Built and launched Gullynest end-to-end in April 2026 — Next.js App Router frontend on Supabase (Postgres, Auth, row-level security) with a Node/Express + Prisma service layer — as the only engineer on the product.
+- Built and launched Gullynest end-to-end in April 2026 — Next.js App Router frontend on Supabase (Postgres, Auth, row-level security, Edge Functions) with a Node/Express + Prisma service layer — as the only engineer on the product.
 - Grew it to **296 live listings and 954 users** across Indiranagar, Bellandur, Whitefield and HSR Layout, closing **10–15 paid move-ins in the last two months** on a 50%-of-one-month's-rent model.
 - Set schema, module boundaries and data flow up front, then had AI agents implement inside them — reviewing every diff, rewriting overreach; strict TypeScript and Vitest/RTL tests caught generated code at build time, not in production.
+- Ran the full delivery loop solo — Vercel preview deploys and production error monitoring — and answered every bug that slipped through with a regression test at the cheapest stage that could catch it.
 - Owned what to build, not just how: rebuilt listing quality, search and the tenant-handover flow on direct conversations with tenants and owners rather than a handed-down spec.
 - Modeled three supply types (tenant handovers, direct owners, RERA-verified agents) behind a review-before-live moderation pipeline, enforcing access rules in Postgres RLS rather than application code.
 
@@ -41,9 +42,8 @@ shipping TypeScript and React in early-stage startups.
 **Co-Founder** · Feb 2024 – Mar 2025
 - Built a B2B marketplace connecting Indian farmers to institutional buyers; led development, market research, BD and fundraising.
 
-### Freelance — Remote
-- **Neev Technologies** (Jun – Jul 2021): built the Neev mobile app from scratch in React Native with an Express backend, shipped to the App Store; integrated Stripe and Wyre payments, Plaid bank linking, and Google/Apple auth.
-- **Elemzy** (Sep – Oct 2021): shipped three React Native applications (teacher, student, parent).
+### Freelance — Remote · 2021
+- Built the Neev mobile app from scratch in React Native with an Express backend and shipped it to the App Store — Stripe and Wyre payments, Plaid bank linking, Google/Apple auth; delivered three further React Native apps for Elemzy.
 
 ## PROJECTS
 **EkAyana** · *Team Lead* · Sep – Oct 2022
