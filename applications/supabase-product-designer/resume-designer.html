@@ -1,0 +1,92 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Neelkanth Tandel — Resume</title>
+<style>
+@page { size: A4; margin: 9.5mm 11mm; }
+* { box-sizing: border-box; }
+body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 9.05pt; line-height: 1.27; color: #14161a; margin: 0; }
+h1 { font-size: 20pt; margin: 0; letter-spacing: -0.4px; font-weight: 700; }
+.tagline { font-size: 10pt; font-weight: 600; color: #2b6cb0; margin: 2px 0 3px; letter-spacing: .2px; }
+.contact { font-size: 8.7pt; color: #40454d; margin-bottom: 7px; }
+.contact a { color: #40454d; text-decoration: none; }
+.summary { margin: 0 0 8px; font-size: 9.05pt; color: #24282e; }
+h2 { font-size: 8.4pt; text-transform: uppercase; letter-spacing: 1.1px; color: #2b6cb0;
+     border-bottom: 1px solid #c9d3de; padding-bottom: 2px; margin: 9px 0 5px; font-weight: 700; }
+ul { margin: 3px 0 0; padding-left: 14px; }
+li { margin-bottom: 1.9px; }
+.role { display: flex; justify-content: space-between; align-items: baseline; margin-top: 7px; }
+.role:first-of-type { margin-top: 0; }
+.co { font-weight: 700; font-size: 10pt; }
+.loc { font-size: 8.7pt; color: #5a6069; white-space: nowrap; padding-left: 10px; }
+.title { font-size: 9.2pt; color: #24282e; margin-top: 1px; }
+.title .dates { color: #5a6069; }
+.sub { font-style: italic; font-size: 8.9pt; color: #2f343b; margin-top: 5px; }
+.skills li { margin-bottom: 2.2px; }
+strong { font-weight: 700; }
+.edu { display: flex; justify-content: space-between; align-items: baseline; }
+</style></head><body>
+
+
+<h1>Neelkanth Tandel</h1>
+<div class="tagline">Design Engineer</div>
+<div class="contact">tandelneelkanth@gmail.com &nbsp;·&nbsp; +91 87809 29208 &nbsp;·&nbsp; Gujarat, India &nbsp;·&nbsp; neelkanthtandel.com &nbsp;·&nbsp; github.com/NeelkanthTandel</div>
+
+<p class="summary">Engineer who owns the product, not just the implementation. Built and launched Gullynest — a live Bengaluru rental marketplace — as the only person on it, deciding what to build from direct conversations with tenants and owners. Designed and built Tvisi's B2B marketplace end to end before that. Comfortable designing for a technical audience because I've been one for four years.</p>
+
+<h2>Skills</h2>
+<ul class="skills">
+<li><strong>Product &amp; Design:</strong> product direction, user research and interviews, user flows, information architecture, Figma, prototyping, responsive UI, Framer Motion</li>
+<li><strong>Engineering:</strong> TypeScript, React, Next.js (App Router, Server Components, SSR/ISR), React Native, Node.js, Express, PostgreSQL, Supabase (Auth, RLS, Edge Functions), Prisma, GraphQL</li>
+<li><strong>Ways of working:</strong> async and remote, AI-assisted delivery (architecture-first agent workflows, diff review), Vercel preview deploys, error monitoring, GitHub Actions</li>
+<li><strong>Also:</strong> Python, C/C++, MongoDB, Mixpanel, UXCam</li>
+</ul>
+
+<h2>Experience</h2>
+
+<div class="role"><span class="co">Unwrap Labs</span><span class="loc">Bengaluru</span></div>
+<div class="title">Full-Stack Engineer &nbsp;<span class="dates">· Oct 2025 – Present</span></div>
+
+<div class="sub">Gullynest (gullynest.com) — tenant-to-tenant rental marketplace, taken 0→1 as sole engineer</div>
+<ul>
+<li>Took Gullynest from idea to launched product in April 2026 as the only person on it — owning what to build and why, not just how — on Next.js and Supabase.</li>
+<li>Set the roadmap from direct conversations with tenants and owners rather than a spec, rebuilding listing quality, search and the tenant-handover flow around what they actually did.</li>
+<li>Solved the marketplace's core structural problem: three kinds of supply (tenant handovers, direct owners, RERA-verified agents) surfaced in one coherent browsing experience, behind a review-before-live moderation pipeline.</li>
+<li><strong>296 live listings and 954 users</strong> across four Bengaluru neighbourhoods, closing <strong>10–15 paid move-ins in the last two months</strong> on a 50%-of-one-month's-rent model.</li>
+<li>Moved fast without letting quality slip — Vercel preview deploys, production error monitoring, and a regression test for every bug that reached a user.</li>
+</ul>
+
+<div class="sub">Core platform</div>
+<ul>
+<li>Designed a blockchain event indexing system that eliminated ~600K daily RPC calls, cutting infrastructure cost ~90%; shipped the rewards dashboard end-to-end across GraphQL APIs, Next.js frontend and production UI.</li>
+</ul>
+
+<div class="role"><span class="co">Tvisi</span><span class="loc">Ahmedabad</span></div>
+<div class="title">Co-Founder <span class="dates">· Feb 2024 – Mar 2025</span></div>
+<ul>
+<li>Designed the B2B agricultural marketplace end to end in Figma — user flows, screens and information architecture for two very different audiences, farmers and institutional buyers — then built it.</li>
+<li>Ran customer discovery with farmers and institutional buyers, and led market research, business development and fundraising.</li>
+</ul>
+
+<div class="role"><span class="co">Neev Technologies</span><span class="loc">Seattle, USA (Remote)</span></div>
+<div class="title">Full-Stack Engineer <span class="dates">· May 2024 – Sep 2025</span> &nbsp;·&nbsp; Intern <span class="dates">· Dec 2021 – Apr 2024</span></div>
+<div class="sub">US wealth-management platform for retail investors.</div>
+<ul>
+<li>Built and maintained the investor mobile app and admin web portal, owning App Store submissions.</li>
+<li>Rebuilt the product page with graphs, automated the withdrawal flow, and shipped multi-bank linking and in-app support — cutting manual ops work and improving user trust.</li>
+<li>Instrumented Mixpanel and UXCam across web and mobile, then used funnel and session data to decide which fixes actually mattered.</li>
+</ul>
+
+<div class="role"><span class="co">Freelance</span><span class="loc">Remote · 2021</span></div>
+<ul>
+<li>Built the Neev mobile app from scratch in React Native with an Express backend and shipped it to the App Store — Stripe and Wyre payments, Plaid bank linking, Google/Apple auth; delivered three further React Native apps for Elemzy.</li>
+</ul>
+
+<h2>Projects</h2>
+<div class="role"><span class="co">EkAyana</span><span class="loc">Team Lead · Sep – Oct 2022</span></div>
+<ul>
+<li><strong>AKAM / SSIP Hackathon Winner (₹50K)</strong> — designed the flows and interface and led a team building a government meeting-management web app (meetings, attendees, documents, minutes) under contest time limits.</li>
+</ul>
+
+<h2>Education</h2>
+<div class="edu"><span><span class="co">CHARUSAT</span> — B.Tech, Computer Engineering &nbsp;·&nbsp; CGPA 9.06/10.0</span><span class="loc">Changa, Gujarat · Oct 2020 – May 2024</span></div>
+
+</body></html>
