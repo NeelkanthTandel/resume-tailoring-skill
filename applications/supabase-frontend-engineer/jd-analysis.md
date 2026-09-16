@@ -1,39 +1,49 @@
-# Supabase — Frontend Engineer: requirement map
+# Supabase — Frontend Engineer
 
-Verbatim posting: `jd-verbatim.md` (supplied by candidate; jobs.ashbyhq.com is egress-blocked here).
-This file supersedes the earlier reconstruction built from search snippets.
+**Verbatim JD received 2026-09-16 — see `jd-verbatim.md`.** This file previously held a
+reconstruction built from search snippets (Ashby was egress-blocked). Corrections below.
 
-## Requirements
+## Corrections to the earlier reconstruction
+| Earlier claim | Reality | Impact |
+|---|---|---|
+| "Studio is a large Next.js app in TypeScript" | JD never names Studio's stack | Conflated with a *different* Supabase frontend posting. No resume change — Next.js is still true of the candidate — but do not assert it about Studio in a cover letter or interview. |
+| "R8: strong all-around web dev — APIs, Postgres, deployments" | Real wording is "Frontend UI, the API contracts it depends on, preview deploys, observability" | Postgres is **not** a stated requirement here. Narrower and more frontend-weighted than assumed. |
+| "Some frontend reqs are EU-timezone-scoped" | This posting is **Remote, Global** | The timezone caution does **not** apply to this req. Candidate is IST — no constraint. |
 
-| # | Requirement | Weight | Resume coverage |
-|---|---|---|---|
-| R1 | 0→1 track record, **"ideally something you can point us to"** | Critical | **Strong** — Gullynest, live URL on the resume, with listings/users/closures |
-| R2 | Iterated on real user feedback, not a handed-down spec | Critical | **Strong** — Gullynest bullet 4; Mixpanel/UXCam-driven prioritisation at Neev |
-| R3 | TypeScript + deep React | Critical | **Strong** |
-| R4 | Modern landscape: SSR, streaming, server components, **edge** | Critical | **Partial** — App Router/RSC/Server Actions/SSR-ISR claimed; **edge unclaimed** |
-| R5 | AI agents: review output, tighten architecture on overreach, give guardrails to self-verify | Critical | **Strong** — dedicated bullet, near-verbatim match |
-| R6 | Quality pipeline as layered checks: type safety at boundaries, lint/format, unit + component tests, **contract tests vs APIs**, **accessibility**, **visual regression**, **bundle-size budgets** | Critical | **Weak** — only strict TS + Vitest/RTL. Four of seven layers absent |
-| R7 | Tooling fluency: **Vitest, Playwright, MSW** or equivalents; opinions on where a check runs and what it's worth | Critical | **Partial** — Vitest/Jest/RTL yes; **no Playwright, no MSW** |
-| R8 | "A bug caught once is caught forever" — add the check that would have caught it, at the cheapest stage | Critical | **Unclaimed** — no bullet expresses regression-test discipline |
-| R9 | End-to-end: frontend UI, **API contracts**, **preview deploys**, **observability** | Important | **Partial** — full-stack + API work strong; preview deploys/observability unclaimed |
-| R10 | **Work in the open** — publicly, in a codebase thousands read and contribute to | Important | **Weak** — GitHub handle added, but no public/OSS work shown |
-| R11 | Autonomy + async written communication | Important | **Strong** — sole engineer, remote US role, co-founder |
+## Confirmed correct
+- The seven quality layers, verbatim: type safety at the boundaries, lint and format, unit and
+  component tests, contract tests against APIs, accessibility, visual regression, bundle-size budgets.
+- "A bug caught once is caught forever" — add the check at the cheapest stage that can catch it.
+- Vitest, Playwright, MSW named explicitly.
+- SSR, streaming, server components, edge.
+- AI-agent comfort: review output, tighten architecture where they overreach, give them guardrails.
+- 0→1 with iteration on real user behaviour.
 
-## What changed vs. my earlier reconstruction
+## Newly surfaced, not in the reconstruction
+- **"ideally something you can point us to."** They want a link to the 0→1 product. Gullynest's URL
+  is on the resume — this is now load-bearing, not decorative.
+- **"do it publicly, in a codebase thousands of developers read and contribute to."** Public work is
+  weighted more heavily than assumed. The empty GitHub profile is a sharper liability than first scored.
+- "We live and die by user feedback and relentlessly address issues every day."
 
-Got right: Studio/marketing-docs ownership, 0→1 + user-feedback bar, "CI is what keeps that speed
-safe", AI-agent comfort, TS/React + SSR/streaming/RSC/edge, Vitest/Playwright/MSW, autonomy/async.
+## Quality-layer coverage (updated 2026-09-16)
+| Layer | Status |
+|---|---|
+| Type safety at the boundaries | Covered — strict TypeScript |
+| Lint and format | Assumed, not claimed |
+| Unit and component tests | Covered — Vitest / RTL |
+| **End-to-end (Playwright)** | **NOW COVERED — admin CRM E2E suites, authored with AI agents, flows specified and diffs reviewed by the candidate** |
+| Contract tests against APIs | Gap |
+| Accessibility | Gap |
+| Visual regression | Gap |
+| Bundle-size budgets | Gap |
+| Regression discipline | Covered — a check added at the cheapest catching stage |
+| Preview deploys + observability | Covered — Vercel previews, production error monitoring |
 
-**Missed — all material:**
-1. The quality pipeline is spelled out as **seven layers**, not a general ask. Contract tests,
-   accessibility, visual regression, and bundle-size budgets were entirely absent from my map.
-2. The **"bug caught once is caught forever"** bullet — regression discipline as its own
-   requirement — did not exist in my reconstruction.
-3. **"Work end-to-end and in the open"** — preview deploys, observability, and public codebase work.
-4. **"Ideally something you can point us to"** — the 0→1 claim is expected to be linkable.
-   Gullynest satisfies this; worth knowing it's an explicit ask.
+Five of the JD's layers evidenced, four gaps remaining. Playwright was the single most valuable one
+to close because the JD names it by tool.
 
-**Wrongly included** (came from the separate Frontend-Docs posting or older reqs, not this one):
-- "Write docs, build example applications, engage the community on GitHub" as responsibilities.
-- An EU-timezone constraint. This role is **fully remote, hired globally** — no timezone restriction.
-- "Large Next.js app" as a stated descriptor of Studio (true in other postings, not stated here).
+## Open question
+Whether the Playwright suites **run in CI on every PR**. If they do, the bullet should say so — the
+JD's phrasing is "wiring up pipelines" and "the CI is what keeps that speed safe", which is a
+stronger claim than having tests that run locally. Currently written without the CI claim.

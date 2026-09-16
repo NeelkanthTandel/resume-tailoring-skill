@@ -35,7 +35,7 @@ strong { font-weight: 700; }
 <ul class="skills">
 <li><strong>Frontend:</strong> TypeScript, React, Next.js (App Router, Server Components, Server Actions, SSR/ISR), React Native, HTML5/CSS3, Framer Motion, Figma</li>
 <li><strong>Backend &amp; Data:</strong> PostgreSQL (triggers, RLS, atomic transactions), Supabase (Auth, RLS, Storage, Edge Functions), Node.js, Express, Prisma, GraphQL, REST, WebSockets, JWT/OAuth</li>
-<li><strong>Quality &amp; Delivery:</strong> strict TypeScript, Vitest, Jest, React Testing Library, regression testing, error monitoring, GitHub Actions, Vercel preview deploys, Git</li>
+<li><strong>Quality &amp; Delivery:</strong> strict TypeScript, Playwright (E2E), Vitest, Jest, React Testing Library, regression testing, error monitoring, GitHub Actions, Vercel preview deploys, Git</li>
 <li><strong>AI-assisted development:</strong> architecture-first agent workflows, diff review, guardrail design &nbsp;·&nbsp; <strong>Also:</strong> Python, C/C++, PHP, MongoDB, Mixpanel, UXCam</li>
 </ul>
 
@@ -47,8 +47,9 @@ strong { font-weight: 700; }
 <div class="sub">Gullynest (gullynest.com) — tenant-to-tenant rental marketplace, built 0→1 as sole engineer</div>
 <ul>
 <li>Built and launched Gullynest end-to-end in April 2026 — Next.js App Router frontend on Supabase (Postgres, Auth, row-level security, Edge Functions) with a Node/Express + Prisma service layer — as the only engineer on the product.</li>
-<li>Grew it to <strong>296 live listings and 954 users</strong> across Indiranagar, Bellandur, Whitefield and HSR Layout, closing <strong>10–15 paid move-ins in the last two months</strong> on a 50%-of-one-month's-rent model.</li>
+<li>Grew it to <strong>296 live listings and 954 users</strong> across four Bengaluru neighbourhoods, closing <strong>10–15 paid move-ins in two months</strong> on a 50%-of-one-month's-rent model.</li>
 <li>Set schema, module boundaries and data flow up front, then had AI agents implement inside them — reviewing every diff, rewriting overreach; strict TypeScript and Vitest/RTL tests caught generated code at build time, not in production.</li>
+<li>Covered the Gullynest admin CRM with end-to-end Playwright suites — specifying the flows myself and reviewing what the agent wrote — putting a net under the internal tool the business now runs on.</li>
 <li>Ran the full delivery loop solo — Vercel preview deploys and production error monitoring — and answered every bug that slipped through with a regression test at the cheapest stage that could catch it.</li>
 <li>Owned what to build, not just how: rebuilt listing quality, search and the tenant-handover flow on direct conversations with tenants and owners rather than a handed-down spec.</li>
 <li>Modeled three supply types (tenant handovers, direct owners, RERA-verified agents) behind a review-before-live moderation pipeline, enforcing access rules in Postgres RLS rather than application code.</li>
@@ -57,8 +58,7 @@ strong { font-weight: 700; }
 <div class="sub">Core platform</div>
 <ul>
 <li>Designed a blockchain event indexing system that eliminated ~600K daily RPC calls, cutting infrastructure cost ~90%.</li>
-<li>Moved daily balance computation into Postgres using SQL triggers and atomic transactions, guaranteeing consistency and removing a dependency on several backend services.</li>
-<li>Shipped the rewards dashboard end-to-end: GraphQL APIs, Next.js frontend, production UI.</li>
+<li>Moved daily balance computation into Postgres with SQL triggers and atomic transactions, removing a dependency on several backend services; shipped the rewards dashboard end-to-end across GraphQL APIs, Next.js and production UI.</li>
 </ul>
 
 <div class="role"><span class="co">Neev Technologies</span><span class="loc">Seattle, USA (Remote)</span></div>
@@ -67,7 +67,7 @@ strong { font-weight: 700; }
 <ul>
 <li>Built and maintained the investor mobile app and admin web portal, owning App Store submissions.</li>
 <li>Automated the withdrawal flow, shipped multi-bank linking and in-app support, and rebuilt the product page with graphs — cutting manual ops work and improving user trust.</li>
-<li>Instrumented Mixpanel and UXCam across web and mobile, then used funnel and session data to prioritise fixes and to test marketing funnels on a standalone site.</li>
+<li>Instrumented Mixpanel and UXCam across web and mobile, using funnel and session data to prioritise fixes.</li>
 <li>Built the referral system and Hyperverge automated KYC; wrote backend unit tests and triaged bugs from user feedback.</li>
 </ul>
 
@@ -79,7 +79,7 @@ strong { font-weight: 700; }
 
 <div class="role"><span class="co">Freelance</span><span class="loc">Remote · 2021</span></div>
 <ul>
-<li>Built the Neev mobile app from scratch in React Native with an Express backend and shipped it to the App Store — Stripe and Wyre payments, Plaid bank linking, Google/Apple auth; delivered three further React Native apps for Elemzy.</li>
+<li>Built the Neev mobile app from scratch in React Native + Express and shipped it to the App Store (Stripe/Wyre payments, Plaid, Google/Apple auth); delivered three further React Native apps for Elemzy.</li>
 </ul>
 
 <h2>Projects</h2>
