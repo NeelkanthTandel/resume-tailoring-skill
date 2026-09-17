@@ -1,6 +1,6 @@
 # Neelkanth Tandel
 **Frontend Engineer**
-tandelneelkanth@gmail.com · +91 87809 29208 · Gujarat, India · neelkanthtandel.com · github.com/NeelkanthTandel
+[tandelneelkanth@gmail.com](mailto:tandelneelkanth@gmail.com) · [+91 87809 29208](tel:+918780929208) · Gujarat, India · [neelkanthtandel.com](https://neelkanthtandel.com) · [github.com/NeelkanthTandel](https://github.com/NeelkanthTandel)
 
 Frontend engineer who builds the tools other people work inside. Took Gullynest — a live Bengaluru rental marketplace — from a blank editor to paying users as its only engineer, including the review pipeline its moderators run every listing through. Four years of TypeScript and Next.js, and a daily working relationship with AI coding agents.
 
@@ -17,7 +17,7 @@ Frontend engineer who builds the tools other people work inside. Took Gullynest 
 ### Unwrap Labs — Bengaluru
 **Full-Stack Engineer · Oct 2025 – Present**
 
-*Gullynest (gullynest.com) — tenant-to-tenant rental marketplace, built 0→1 as sole engineer*
+*Gullynest ([gullynest.com](https://gullynest.com)) — tenant-to-tenant rental marketplace, built 0→1 as sole engineer*
 
 - Built and launched Gullynest end-to-end in April 2026 — Next.js App Router frontend on Supabase (Postgres, Auth, row-level security, Edge Functions) with a Node/Express + Prisma service layer — as the only engineer on the product.
 - Built the review-before-live content pipeline the marketplace runs on — three supply types (tenant handovers, direct owners, RERA-verified agents) moderated by humans, in tooling I built for the reviewers.

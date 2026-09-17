@@ -1,6 +1,6 @@
 # Neelkanth Tandel
 **Design Engineer**
-tandelneelkanth@gmail.com · +91 87809 29208 · Gujarat, India · neelkanthtandel.com · github.com/NeelkanthTandel
+[tandelneelkanth@gmail.com](mailto:tandelneelkanth@gmail.com) · [+91 87809 29208](tel:+918780929208) · Gujarat, India · [neelkanthtandel.com](https://neelkanthtandel.com) · [github.com/NeelkanthTandel](https://github.com/NeelkanthTandel)
 
 Engineer who owns the product, not just the implementation. Built and launched Gullynest — a live Bengaluru rental marketplace — as the only person on it, deciding what to build from direct conversations with tenants and owners. Designed and built Tvisi's B2B marketplace end to end before that. Comfortable designing for a technical audience because I've been one for four years.
 
@@ -16,7 +16,7 @@ Engineer who owns the product, not just the implementation. Built and launched G
 ### Unwrap Labs — Bengaluru
 **Full-Stack Engineer · Oct 2025 – Present**
 
-*Gullynest (gullynest.com) — tenant-to-tenant rental marketplace, taken 0→1 as sole engineer*
+*Gullynest ([gullynest.com](https://gullynest.com)) — tenant-to-tenant rental marketplace, taken 0→1 as sole engineer*
 
 - Took Gullynest from idea to launched product in April 2026 as the only person on it — owning what to build and why, not just how — on Next.js and Supabase.
 - Set the roadmap from direct conversations with tenants and owners rather than a spec, rebuilding listing quality, search and the tenant-handover flow around what they actually did.
